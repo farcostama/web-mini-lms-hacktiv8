@@ -158,3 +158,38 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 >>>>>>> 7390efabbd4d7e820ede4ba995345f4344bf8049
+
+
+
+# Node modules
+node_modules/
+
+# Build / output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional: lock files (jika kamu tidak ingin ikut push)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

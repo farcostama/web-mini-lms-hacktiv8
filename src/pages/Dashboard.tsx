@@ -40,9 +40,10 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen p-8 bg-gray-50">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col items-center justify-between w-full px-4 py-2 md:flex-row">
         <h1 className="text-3xl font-bold text-indigo-600">Halo, {user?.email}</h1>
-        <button onClick={handleLogout} className="px-4 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600">
+        {/* Tombol Logout Fixed di pojok kanan bawah untuk mobile */}
+        <button onClick={handleLogout} className="fixed px-4 py-2 text-white bg-red-500 rounded-lg shadow-lg bottom-4 right-4 hover:bg-red-600 md:static md:inline-block">
           Logout
         </button>
       </div>
