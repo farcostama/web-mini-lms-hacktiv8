@@ -1,74 +1,69 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+Mini LMS Hacktiv8
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini LMS Hacktiv8 adalah aplikasi web Learning Management System sederhana yang memungkinkan pengguna belajar materi interaktif dan mengerjakan kuis. Pengguna harus mendaftar dan login sebelum mengakses dashboard. Setiap materi diakhiri dengan kuis untuk menguji pemahaman.
 
-Currently, two official plugins are available:
+Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+HTML & CSS, React JS, Tailwind CSS, Vite, Zustand, Supabase, TypeScript
 
-## Expanding the ESLint configuration
+Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Halaman registrasi & login dengan validasi email
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Dashboard dengan 3 materi:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Materi Bacaan – meningkatkan kemampuan membaca, diakhiri 10 kuis
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Materi Penalaran – melatih logika dan analisis, diakhiri 10 kuis
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Materi Kognitif – meningkatkan daya ingat dan konsentrasi, diakhiri 10 kuis
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Proteksi route untuk dashboard (hanya user yang login bisa akses)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
+Logout yang aman
+
+Not Found page untuk URL tidak dikenal
+
+UI/UX responsif dengan Tailwind CSS
+
+Setup Instructions
+
+Clone repository:
+
+git clone https://github.com/USERNAME/REPOSITORY.git
+cd REPOSITORY
+
+Install dependencies:
+
+npm install
+
+Buat project di Supabase dan dapatkan VITE_SUPABASE_URL dan VITE_SUPABASE_ANON_KEY.
+
+Buat file .env di root project:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+Jalankan development server:
+
+npm run dev
+
+Buka browser di http://localhost:5173
+
+Build & Deployment
+
+Build project:
+
+npm run build
+
+Deploy ke Vercel atau Netlify (React + Vite)
+
+AI Support Explanation
+
+# Aplikasi ini dikembangkan menggunakan IBM Granite AI untuk membantu membuat dan mengoptimalkan kode.
+
 # web-mini-lms-hacktiv8
+
 Website Capstone Project dengan React, Tailwind, Supabase.
->>>>>>> 7390efabbd4d7e820ede4ba995345f4344bf8049
+
+> > > > > > > 7390efabbd4d7e820ede4ba995345f4344bf8049
