@@ -1,5 +1,5 @@
-// src/components/ProtectedRoute.tsx
-import { ReactNode, useEffect } from "react";
+import type { ReactNode } from "react";
+import { useEffect } from "react"; // <--- tambahkan ini
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../stores/auth";
 

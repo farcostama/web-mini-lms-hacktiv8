@@ -28,7 +28,7 @@ export default function Landing() {
     function animate() {
       scrollPos += speed;
       if (scrollPos >= cardWidth * totalCards) scrollPos = 0;
-      slider.style.transform = `translateX(-${scrollPos}px)`;
+      slider?.style.setProperty("transform", `translateX(-${scrollPos}px)`);
       requestAnimationFrame(animate);
     }
 

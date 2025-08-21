@@ -1,18 +1,16 @@
 // src/pages/Blog.tsx
-import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
 
 export default function BlogPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
-      <main className="flex-grow max-w-4xl mx-auto p-6 text-gray-800">
-        <h1 className="text-4xl font-bold mb-6 text-indigo-700">5 Kebiasaan Sederhana untuk Meningkatkan Produktivitas Belajar</h1>
+      <main className="flex-grow max-w-4xl p-6 mx-auto text-gray-800">
+        <h1 className="mb-6 text-4xl font-bold text-indigo-700">5 Kebiasaan Sederhana untuk Meningkatkan Produktivitas Belajar</h1>
         <p className="mb-6">
           Belajar efektif bukan hanya soal seberapa lama kamu duduk di depan buku atau layar, tapi bagaimana kamu mengelola waktu dan fokus secara tepat. Berikut beberapa kebiasaan sederhana yang bisa kamu coba untuk meningkatkan
           produktivitas belajar:
         </p>
 
-        <ol className="list-decimal list-inside space-y-4">
+        <ol className="space-y-4 list-decimal list-inside">
           <li>
             <strong>Buat Jadwal Belajar yang Konsisten</strong>
             <br />
@@ -41,7 +39,7 @@ export default function BlogPage() {
         </ol>
       </main>
 
-      <footer className="bg-gray-900 text-gray-300 py-8 text-center">&copy; 2025 LogikaIn. All rights reserved.</footer>
+      <footer className="py-8 text-center text-gray-300 bg-gray-900">&copy; 2025 LogikaIn. All rights reserved.</footer>
     </div>
   );
 }

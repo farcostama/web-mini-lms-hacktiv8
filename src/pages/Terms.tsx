@@ -1,12 +1,10 @@
-import React from "react";
-
 export default function TermsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
-      <main className="flex-grow max-w-4xl mx-auto p-6 text-gray-800">
-        <h1 className="text-4xl font-bold mb-6 text-indigo-700 text-center">Syarat dan Ketentuan</h1>
+      <main className="flex-grow max-w-4xl p-6 mx-auto text-gray-800">
+        <h1 className="mb-6 text-4xl font-bold text-center text-indigo-700">Syarat dan Ketentuan</h1>
 
-        <ol className="list-decimal list-inside space-y-3 text-gray-700">
+        <ol className="space-y-3 text-gray-700 list-decimal list-inside">
           <li>
             <strong>Penggunaan Layanan:</strong> Dengan menggunakan platform LogikaIn, Anda setuju untuk mematuhi semua aturan dan ketentuan yang berlaku.
           </li>
@@ -25,7 +23,7 @@ export default function TermsPage() {
         </ol>
       </main>
 
-      <footer className="bg-gray-900 text-gray-300 py-8 text-center">&copy; 2025 LogikaIn. Semua hak cipta dilindungi.</footer>
+      <footer className="py-8 text-center text-gray-300 bg-gray-900">&copy; 2025 LogikaIn. Semua hak cipta dilindungi.</footer>
     </div>
   );
 }
